@@ -1,7 +1,7 @@
 // forループからの脱却
 
 function handlePosts() {
-  var posts = [{
+  const posts = [{
       id: 23,
       title: 'JSニュース'
     },
@@ -22,7 +22,7 @@ function handlePosts() {
 
 
 // 複数の値の処理
-var images = [{
+const images = [{
     height: 10,
     width: 30
   },
@@ -35,7 +35,7 @@ var images = [{
     width: 32
   },
 ];
-var area = [];
+const area = [];
 
 images.forEach((image) => {
   areas.push(image.height * image.width);

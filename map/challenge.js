@@ -41,7 +41,7 @@ var trips = [{
 var speeds;
 
 
-var speeds = trips.map((trip) => {
+const speeds = trips.map((trip) => {
   return trip.distance / trip.time;
 });
 
@@ -59,7 +59,7 @@ function pluck(array, property) {
   });
 }
 
-var colorObjects = [{
+const colorObjects = [{
   color: '赤'
 }, {
   color: '青'
@@ -67,4 +67,4 @@ var colorObjects = [{
   color: '黄色'
 }];
 
-var colorNames = pluck(colorObjects, 'color');
+const colorNames = pluck(colorObjects, 'color');

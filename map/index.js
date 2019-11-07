@@ -5,7 +5,7 @@ for (var i = 0; i < numbers.length; i++) {
   doubledNumbers.push(numbers[i] * 2);
 }
 
-var doubled = numbers.map(function (number) {
+let doubled = numbers.map(function (number) {
   return number * 2;
 });
 
