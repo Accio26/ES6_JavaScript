@@ -8,12 +8,11 @@ Promise 成功→resolved→コールバック then
 Promise 失敗→rejected→コールバック catch
 */
 
-
 // Promiseを作ってみよう
 const promise = new Promise((resolve, reject) => {
   setTimeout(() => {
     resolve();
-  }, 3000)
+  }, 3000);
 });
 
 promise
@@ -21,13 +20,8 @@ promise
   .then(() => console.log('ここも実行されるよ！！'))
   .catch(() => console.log('問題発生！！'));
 
-
-
-
-
-
 // fetch
-url = "https://jsonplaceholder.typicode.com/posts/";
+url = 'https://jsonplaceholder.typicode.com/posts/';
 
 fetch(url)
   .then(response => response.json())
